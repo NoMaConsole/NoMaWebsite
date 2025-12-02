@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NoMaConsole - NoMa</title>
+	<link rel="icon" href="data/logos/NoMaLogo_greyblue.png" type="image/x-icon">
+	<link rel="stylesheet" href="style/style.css">
+	<!-- google fonts etc. -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet">
+	<script>
+		fetch('header.html')
+			.then(response => response.text())
+			.then(data => {
+				document.getElementById('header-placeholder').innerHTML = data;
+			});
+	</script>
+</head>
+<body class="noma-body">
+	<div id="header-placeholder"></div>
+	<main class="noma-main">
+		<section class="noma-banner-section">
+			<div class="noma-banner-container">
+				<img src="data/bilder/ConsoleDemoModel.png" alt="NoMaConsole" class="noma-banner-img">
+				<h1 class="noma-banner-title">NOMACONSOLE</h1>
+			</div>
+		</section>
+		<section class="noma-info-section">
+			<h2 class="noma-info-title">Die neue Generation des Spielens.</h2>
+			<div class="noma-info-text">
+				Die <b>NoMaConsole</b> vereint modernste Technologie mit elegantem Design. Entwickelt für Gaming-Enthusiasten, die keine Kompromisse eingehen wollen. Erlebe Spiele in einer neuen Dimension – powered by NoMa.
+			</div>
+		</section>
+		<section class="noma-features-section">
+			<h2 class="noma-section-title">Technische Highlights</h2>
+			<div class="noma-features-grid">
+				<div class="noma-feature-card">
+					<h3 class="noma-feature-title">Leistungsstarke Hardware</h3>
+					<p class="noma-feature-text">Neueste Prozessor- und Grafiktechnologie für flüssiges Gaming in 4K und darüber hinaus.</p>
+				</div>
+				<div class="noma-feature-card">
+					<h3 class="noma-feature-title">Schneller Speicher</h3>
+					<p class="noma-feature-text">Ultra-schnelle SSD mit bis zu 2TB Kapazität für blitzschnelle Ladezeiten.</p>
+				</div>
+				<div class="noma-feature-card">
+					<h3 class="noma-feature-title">Ray Tracing</h3>
+					<p class="noma-feature-text">Realistische Beleuchtung und Reflexionen für ein immersives Spielerlebnis.</p>
+				</div>
+				<div class="noma-feature-card">
+					<h3 class="noma-feature-title">120 FPS</h3>
+					<p class="noma-feature-text">Unterstützung für bis zu 120 Bilder pro Sekunde für butterweiche Gameplay-Action.</p>
+				</div>
+				<div class="noma-feature-card">
+					<h3 class="noma-feature-title">Konnektivität</h3>
+					<p class="noma-feature-text">HDMI 2.1, USB-C, Wi-Fi 6 und Bluetooth 5.2 für maximale Flexibilität.</p>
+				</div>
+				<div class="noma-feature-card">
+					<h3 class="noma-feature-title">Abwärtskompatibilität</h3>
+					<p class="noma-feature-text">Spiele deine gesamte NoMa-Bibliothek – auch ältere Titel laufen besser als je zuvor.</p>
+				</div>
+			</div>
+		</section>
+		<section class="noma-core-features-section">
+			<h2 class="noma-section-title">Kernfunktionen der NoMaConsole</h2>
+			<div class="noma-core-features-grid">
+				<div class="noma-core-feature-item">
+					<div class="noma-core-feature-icon">
+						<svg width="80" height="80" viewBox="0 0 24 24" fill="#222" stroke="none">
+							<circle cx="12" cy="12" r="10"></circle>
+							<circle cx="12" cy="8" r="1" fill="#fff"></circle>
+							<rect x="11" y="10" width="2" height="6" fill="#fff"></rect>
+						</svg>
+					</div>
+					<h3 class="noma-core-feature-title">NoMaOS</h3>
+					<p class="noma-core-feature-text">Ein für Gaming optimiertes Betriebssystem mit schnellem Aufwachen aus Cloud-Speicherung.</p>
+				</div>
+				<div class="noma-core-feature-item">
+					<div class="noma-core-feature-icon">
+						<svg width="80" height="80" viewBox="0 0 24 24" fill="#222" stroke="none">
+							<rect x="3" y="3" width="18" height="18" rx="2"></rect>
+							<rect x="9" y="3" width="2" height="18" fill="#fff"></rect>
+							<rect x="3" y="9" width="18" height="2" fill="#fff"></rect>
+							<rect x="3" y="15" width="18" height="2" fill="#fff"></rect>
+						</svg>
+					</div>
+					<h3 class="noma-core-feature-title">Klein und handlich</h3>
+					<p class="noma-core-feature-text">Kompaktes Design - die NoMa Machine passt fast überall hin.</p>
+				</div>
+				<div class="noma-core-feature-item">
+					<div class="noma-core-feature-icon">
+						<svg width="80" height="80" viewBox="0 0 24 24" fill="#222" stroke="none">
+							<path d="M12 2L12 22M17 5L9.5 5C7.567 5 6 6.567 6 8.5C6 10.433 7.567 12 9.5 12L14.5 12C16.433 12 18 13.567 18 15.5C18 17.433 16.433 19 14.5 19L6 19"></path>
+						</svg>
+					</div>
+					<h3 class="noma-core-feature-title">Kühl und leise</h3>
+					<p class="noma-core-feature-text">Die NoMa Machine bleibt auch beim Spielen der anspruchsvollsten Titel kühl und leise.</p>
+				</div>
+				<div class="noma-core-feature-item">
+					<div class="noma-core-feature-icon">
+						<svg width="80" height="80" viewBox="0 0 24 24" fill="#222" stroke="none">
+							<rect x="2" y="7" width="20" height="14" rx="2"></rect>
+							<path d="M16 21L16 5C16 3.895 15.105 3 14 3L10 3C8.895 3 8 3.895 8 5L8 21" fill="#fff"></path>
+						</svg>
+					</div>
+					<h3 class="noma-core-feature-title">Eingaben und Ausgaben für jeden Geschmack</h3>
+					<p class="noma-core-feature-text">USB-C Anschluss für vielseitige Peripheriegeräte.</p>
+				</div>
+				<div class="noma-core-feature-item">
+					<div class="noma-core-feature-icon">
+						<svg width="80" height="80" viewBox="0 0 24 24" fill="#222" stroke="none">
+							<rect x="2" y="6" width="20" height="12" rx="2"></rect>
+							<circle cx="7" cy="12" r="1.5" fill="#fff"></circle>
+							<circle cx="12" cy="12" r="1.5" fill="#fff"></circle>
+							<circle cx="17" cy="12" r="1.5" fill="#fff"></circle>
+						</svg>
+					</div>
+					<h3 class="noma-core-feature-title">CPU und GPU</h3>
+					<p class="noma-core-feature-text">Erleben Sie Gaming auf Desktop-Niveau mit Dual-Core LX7 Prozessor.</p>
+				</div>
+				<div class="noma-core-feature-item">
+					<div class="noma-core-feature-icon">
+						<svg width="80" height="80" viewBox="0 0 24 24" fill="#222" stroke="none">
+							<path d="M4 4h12l4 4v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"></path>
+							<path d="M16 4v4h4"></path>
+							<rect x="6" y="12" width="12" height="2" fill="#fff"></rect>
+							<rect x="6" y="16" width="8" height="1.5" fill="#fff"></rect>
+						</svg>
+					</div>
+					<h3 class="noma-core-feature-title">Speicher</h3>
+					<p class="noma-core-feature-text">16 MB Flash und 8 MB PSRAM für schnelle Speicherverwaltung.</p>
+				</div>
+				<div class="noma-core-feature-item">
+					<div class="noma-core-feature-icon">
+						<svg width="80" height="80" viewBox="0 0 24 24" fill="#222" stroke="none">
+							<circle cx="12" cy="12" r="3"></circle>
+							<path d="M12 1v6m0 6v6M5.6 5.6l4.2 4.2m4.2 4.2l4.2 4.2M1 12h6m6 0h6M5.6 18.4l4.2-4.2m4.2-4.2l4.2-4.2"></path>
+						</svg>
+					</div>
+					<h3 class="noma-core-feature-title">Verbindung</h3>
+					<p class="noma-core-feature-text">2x2 WLAN und Bluetooth 5.3 mit dedizierter BT-Antenne.</p>
+				</div>
+				<div class="noma-core-feature-item">
+					<div class="noma-core-feature-icon">
+						<svg width="80" height="80" viewBox="0 0 24 24" fill="#222" stroke="none">
+							<polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+						</svg>
+					</div>
+					<h3 class="noma-core-feature-title">Stromversorgung</h3>
+					<p class="noma-core-feature-text">Kein dicker Klotz! Die NoMa Machine verfügt über eine integrierte Stromversorgung.</p>
+				</div>
+			</div>
+		</section>
+		<section class="noma-specs-section">
+			<h2 class="noma-section-title">Technische Spezifikationen</h2>
+			<div class="noma-specs-container">
+				<div class="noma-spec-item noma-spec-highlight">
+					<span class="noma-spec-label">Prozessor:</span>
+					<span class="noma-spec-value">Xtensa Dual-Core 32-bit LX7 @ 240 MHz</span>
+				</div>
+				<div class="noma-spec-item noma-spec-highlight">
+					<span class="noma-spec-label">SRAM:</span>
+					<span class="noma-spec-value">512 KB</span>
+				</div>
+				<div class="noma-spec-item noma-spec-highlight">
+					<span class="noma-spec-label">PSRAM:</span>
+					<span class="noma-spec-value">8 MB (Octal SPI)</span>
+				</div>
+				<div class="noma-spec-item noma-spec-highlight">
+					<span class="noma-spec-label">Flash-Speicher:</span>
+					<span class="noma-spec-value">16 MB</span>
+				</div>
+				<div class="noma-spec-item noma-spec-highlight">
+					<span class="noma-spec-label">SD-Karte:</span>
+					<span class="noma-spec-value">128 GB (integriert)</span>
+				</div>
+				<div class="noma-spec-item">
+					<span class="noma-spec-label">WLAN:</span>
+					<span class="noma-spec-value">802.11 b/g/n (2.4 GHz)</span>
+				</div>
+				<div class="noma-spec-item">
+					<span class="noma-spec-label">Bluetooth:</span>
+					<span class="noma-spec-value">Bluetooth 5 (LE), BLE Mesh</span>
+				</div>
+				<div class="noma-spec-item">
+					<span class="noma-spec-label">Eingabe/Ausgabe:</span>
+					<span class="noma-spec-value">1x USB-C Port (OTG 2.0)</span>
+				</div>
+				<div class="noma-spec-item">
+					<span class="noma-spec-label">Schnittstellen:</span>
+					<span class="noma-spec-value">SPI, I²C, I²S, UART, ADC, DAC, PWM</span>
+				</div>
+				<div class="noma-spec-item">
+					<span class="noma-spec-label">Stromversorgung:</span>
+					<span class="noma-spec-value">3.0V - 3.6V</span>
+				</div>
+				<div class="noma-spec-item">
+					<span class="noma-spec-label">Betriebstemperatur:</span>
+					<span class="noma-spec-value">-40°C bis +85°C</span>
+				</div>
+			</div>
+		</section>
+		<section class="noma-cta-section">
+			<h2 class="noma-cta-title">Bereit für 2026?</h2>
+			<p class="noma-cta-text">Die NoMaConsole kommt Anfang 2026. Sei einer der Ersten, der die Zukunft des Gamings erlebt.</p>
+			<button class="noma-cta-btn">Mehr erfahren</button>
+		</section>
+	</main>
+	<footer class="noma-footer">
+		&copy; 2026 NoMa. Alle Rechte vorbehalten.
+	</footer>
+</body>
+</html>

@@ -172,3 +172,228 @@
     font-size: 1.1em;
     letter-spacing: 1px;
 }
+
+/* Features Section */
+.noma-features-section {
+    padding: 48px 5vw;
+    margin-top: 40px;
+}
+.noma-section-title {
+    color: #222;
+    font-size: 2.2em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+.noma-features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.noma-feature-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 32px 24px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.noma-feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+.noma-feature-title {
+    color: #67c1f5;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+.noma-feature-text {
+    color: #555;
+    font-size: 1.05em;
+    line-height: 1.6;
+}
+
+/* Specs Section */
+.noma-specs-section {
+    background: linear-gradient(135deg, #1a1d29 0%, #2d3142 100%);
+    padding: 64px 5vw;
+    margin-top: 40px;
+    position: relative;
+    overflow: hidden;
+}
+.noma-specs-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 50px,
+        rgba(103, 193, 245, 0.03) 50px,
+        rgba(103, 193, 245, 0.03) 51px
+    );
+    pointer-events: none;
+}
+.noma-specs-section .noma-section-title {
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+.noma-specs-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 0;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(103, 193, 245, 0.2);
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.noma-spec-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 32px;
+    border-bottom: 1px solid rgba(103, 193, 245, 0.15);
+    transition: all 0.3s ease;
+    position: relative;
+}
+.noma-spec-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(180deg, #67c1f5 0%, #4da8d8 100%);
+    transform: scaleY(0);
+    transition: transform 0.3s ease;
+}
+.noma-spec-item:hover {
+    background: rgba(103, 193, 245, 0.1);
+    padding-left: 36px;
+}
+.noma-spec-item:hover::before {
+    transform: scaleY(1);
+}
+.noma-spec-item:last-child {
+    border-bottom: none;
+}
+.noma-spec-label {
+    font-weight: 700;
+    color: #67c1f5;
+    font-size: 1.15em;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.noma-spec-label::before {
+    content: '▸';
+    color: #67c1f5;
+    font-size: 1.2em;
+}
+.noma-spec-value {
+    color: #e6e6e6;
+    font-size: 1.05em;
+    text-align: right;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+.noma-spec-highlight {
+    background: rgba(181, 232, 83, 0.1);
+    border-left: 4px solid #b5e853;
+}
+.noma-spec-highlight .noma-spec-label {
+    color: #b5e853;
+}
+.noma-spec-highlight .noma-spec-label::before {
+    color: #b5e853;
+}
+
+/* CTA Section */
+.noma-cta-section {
+    text-align: center;
+    padding: 64px 5vw;
+    margin-top: 40px;
+}
+.noma-cta-title {
+    color: #222;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+.noma-cta-text {
+    color: #555;
+    font-size: 1.2em;
+    margin-bottom: 32px;
+    line-height: 1.6;
+}
+.noma-cta-btn {
+    background: #67c1f5;
+    color: #fff;
+    border: none;
+    padding: 16px 48px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    letter-spacing: 1px;
+}
+.noma-cta-btn:hover {
+    background: #4da8d8;
+    transform: translateY(-2px);
+}
+
+/* Core Features Section */
+.noma-core-features-section {
+    padding: 64px 5vw;
+    margin-top: 40px;
+    background: #f5f5f5;
+}
+.noma-core-features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.noma-core-feature-item {
+    text-align: left;
+    padding: 20px;
+}
+.noma-core-feature-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 0 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.noma-core-feature-icon svg {
+    width: 80px;
+    height: 80px;
+}
+.noma-core-feature-title {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 12px;
+}
+.noma-core-feature-text {
+    color: #555;
+    font-size: 1.05em;
+    line-height: 1.6;
+}
